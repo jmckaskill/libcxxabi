@@ -13,6 +13,7 @@
 
 // Support functions for the no-exceptions libc++ library
 
+#ifdef _LIBCXXABI_NO_EXCEPTIONS
 #include "config.h"
 #include "cxxabi.h"
 
@@ -58,3 +59,4 @@ __cxa_uncaught_exceptions() throw() { return 0; }
 #pragma GCC visibility pop
 
 }  // abi
+#endif

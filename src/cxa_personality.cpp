@@ -12,6 +12,7 @@
 //  
 //===----------------------------------------------------------------------===//
 
+#ifndef _LIBCXXABI_NO_EXCEPTIONS
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
@@ -1298,3 +1299,4 @@ __cxa_call_unexpected(void* arg)
 }  // extern "C"
 
 }  // __cxxabiv1
+#endif

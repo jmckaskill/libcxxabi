@@ -9,6 +9,7 @@
 // This file implements the default terminate_handler and unexpected_handler.
 //===----------------------------------------------------------------------===//
 
+#ifndef _LIBCXXABI_NO_EXCEPTIONS
 #include <stdexcept>
 #include <new>
 #include <exception>
@@ -124,3 +125,4 @@ set_terminate(terminate_handler func) _NOEXCEPT
 }
 
 }
+#endif

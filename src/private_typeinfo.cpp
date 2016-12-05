@@ -7,6 +7,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+#ifndef _LIBCXXABI_NO_RTTI
 #include "private_typeinfo.h"
 
 // The flag _LIBCXX_DYNAMIC_FALLBACK is used to make dynamic_cast more
@@ -1277,3 +1278,4 @@ __base_class_type_info::search_below_dst(__dynamic_cast_info* info,
 #pragma GCC visibility pop
 
 }  // __cxxabiv1
+#endif

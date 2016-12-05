@@ -11,6 +11,7 @@
 //  
 //===----------------------------------------------------------------------===//
 
+#ifndef _LIBCXXABI_NO_EXCEPTIONS
 #include "config.h"
 #include "cxxabi.h"
 
@@ -716,3 +717,4 @@ __cxa_uncaught_exceptions() throw()
 #pragma GCC visibility pop
 
 }  // abi
+#endif
